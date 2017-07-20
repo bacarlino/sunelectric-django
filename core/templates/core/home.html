@@ -1,0 +1,47 @@
+{% extends "core/__base.html" %}
+
+{% block extra_head %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'core/styles/home.css' %}" />
+{% endblock %}
+
+{% block content %}
+  <div class="home-banner"></div>
+
+  <div class="container text-center" id="home">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="home-text">
+        <h2>Industrial</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      </div>
+      <div class="col-md-6">
+        <img class="img-responsive center-block" src="http://via.placeholder.com/640x480" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-push-6">
+        <div class="home-text">
+        <h2>Commercial</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="col-md-6 col-md-pull-6">
+        <img class="img-responsive center-block" src="http://via.placeholder.com/640x480" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="home-text">
+        <h2>Service</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      </div>
+      <div class="col-md-6">
+        <img class="img-responsive center-block" src="http://via.placeholder.com/640x480" />
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

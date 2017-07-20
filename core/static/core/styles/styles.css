@@ -1,0 +1,117 @@
+* {
+  /*outline: solid red;*/
+}
+
+html, body, #root, #main-container {
+  /*border: solid green;*/
+  height: 100%;
+}
+
+
+
+.navbar {
+  /*outline: solid pink;*/
+  background-color: #f5f5f5;
+  height: 140px;
+  border-bottom: solid #f97d1b 5px;
+  border-bottom-width: 100%;
+  margin-bottom: 0;
+}
+
+.container {
+  /*outline: solid green;*/
+  height: 140px;
+}
+
+.navbar-header {
+  /*outline: solid blue;*/
+  /*margin-right: 0;*/
+  height: 100%;
+}
+
+.navbar-brand {
+  /*outline: solid gray;*/
+  height: 100%;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar button {
+  margin-top: 75px;
+  border: none;
+}
+
+.navbar-brand img {
+
+  /*outline: solid orange;*/
+  /*width: 350px;
+  margin: 0;
+  padding: 0;*/
+}
+
+.nav {
+  /*outline: solid yellow;*/
+  margin: 68px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+.navbar-nav > li > .dropdown-menu {
+  margin-right: -18px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.navbar-toggle {
+  color: black;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #222;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  width: 35px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #222;
+}
+
+@media (max-width: 991px) {
+  .nav {
+    font-size: 1em;
+  }
+
+  .navbar img {
+    height: 95px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav {
+    float: right;
+    margin: 0;
+    text-align: center;
+    background-color: #f5f5f5;
+    max-width: 125px;
+  }
+
+  .navbar-nav > li > .dropdown-menu {
+    text-align: right;
+    margin-right: 0;
+    color: #222;
+  }
+
+  .navbar img {
+    height: 75px;
+  }
+
+  .navbar-collapse {
+    padding-right: 0;
+  }
+
+}

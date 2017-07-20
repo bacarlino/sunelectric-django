@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'webpack_loader',
     'whitenoise.runserver_nostatic',
     'widget_tweaks',
+    'core'
 ]
 
 MIDDLEWARE = [
