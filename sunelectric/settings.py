@@ -14,6 +14,12 @@ import dj_database_url
 import os
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# DEFAULT_FROM_EMAIL = 'testing@example.com'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'bacarlino@gmail.com'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
 
 # Build paths inside the prmysite/wsgi.mysite/wsgi.pymysite/wsgi.py like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -46,7 +52,8 @@ INSTALLED_APPS = [
     'webpack_loader',
     'whitenoise.runserver_nostatic',
     'widget_tweaks',
-    'core'
+    'core',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
