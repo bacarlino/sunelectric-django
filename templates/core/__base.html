@@ -11,7 +11,7 @@
     </title>
     {% block stylesheets %}
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" href="{% static 'core/styles/styles.css' %}" />
+      <link rel="stylesheet" href="{% static 'core/styles/base.css' %}" />
     {% endblock %}
     {% block javascript %}
       <script src="https://use.fontawesome.com/e406c0d4e8.js"></script>
@@ -23,5 +23,6 @@
   <body>
     {% include "core/_navigation.html" %}
     {% block content %}{% endblock %}
+    {% include "core/_footer.html" %}
   </body>
 </html>

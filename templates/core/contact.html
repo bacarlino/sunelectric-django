@@ -1,23 +1,32 @@
 {% extends "core/__base.html" %}
+{% load crispy_forms_tags %}
+
 
 {% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 test">
+      <h1>Contact Us</h1>
+      <p>We are dedicated to providing our customers with outstanding service and look forward to working with you!</p>
 
-<h2>Contact Us</h2>
-<p>We are dedicated to providing our customers with outstanding service and look forward to working with you!</p>
+      <strong>Phone:</strong> 317-821-8130 <br />
+      <strong>Fax:</strong> 317-821-8140 <br />
+      <strong>Address:</strong>8515 Camby Rd. Camby, IN 46168
+      <hr />
 
-<strong>Phone:</strong> 317-821-8130 <br />
-<strong>Fax:</strong> 317-821-8140 <br />
-<strong>Address:</strong>8515 Camby Rd. Camby, IN 46168
-<hr />
-Scott Hampton <br />
-Dave Walls<br />
-Scott Stout
-<hr />
+      <!-- <form role="form" action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+      </form> -->
 
-<form role="form" action="" method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Submit</button>
-</form>
+      {% crispy form  %}
 
+      <hr />
+      Scott Hampton <br />
+      Dave Walls<br />
+      Scott Stout
+    </div>
+  </div>
+</div>
 {% endblock content %}

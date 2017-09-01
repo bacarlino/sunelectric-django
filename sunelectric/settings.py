@@ -13,13 +13,19 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import dj_database_url
 import os
 
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-# DEFAULT_FROM_EMAIL = 'testing@example.com'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'bacarlino@gmail.com'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = 'bacarlino@gmail.com'
+# EMAIL_HOST_PASSWORD = ''
+# EMAIL_USE_TLS = True
+# EMAIL_PORT = 587
+DEFAULT_FROM_EMAIL = 'testing@example.com'
+EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
+EMAIL_USE_TLS = False
+EMAIL_PORT = 1025
 
 # Build paths inside the prmysite/wsgi.mysite/wsgi.pymysite/wsgi.py like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -51,9 +57,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'webpack_loader',
     'whitenoise.runserver_nostatic',
-    'widget_tweaks',
     'core',
     'phonenumber_field',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -158,3 +164,5 @@ WEBPACK_LOADER = {
         'IGNORE': ['.+\.hot-update.js', '.+\.map']
     }
 }
+
+PHONENUMBER_DEFAULT_REGION = 'US'

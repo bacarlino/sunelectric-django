@@ -6,21 +6,23 @@ from django.template.loader import get_template
 
 
 def contact(request):
-    form_class = ContactForm
 
     if request.method == "POST":
-        form = form_class(request.POST)
-
+        form = ContactForm(request.POST)
         if form.is_valid():
-            contact_name = request.POST.get('contact_name', '')
-            contact_email = request.POST.get('contact_email', '')
-            form_content = request.POST.get('content', '')
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            phone = form.cleaned_data['phone']
+            company = form.cleaned_data['company']
+            message = form.cleaned_data['message']
 
             template = get_template('core/contact_template.txt')
             context = {
-                'contact_name': contact_name,
-                'contact_email': contact_email,
-                'form_content': form_content,
+                'name': name,
+                'email': email,
+                'phone': phone,
+                'company': company,
+                'message': message,
             }
             content = template.render(context)
 
@@ -29,9 +31,11 @@ def contact(request):
                 content,
                 "Your website" +'',
                 ['bacarlino@gmail.com'],
-                headers = {'Reply-To': contact_email }
+                headers = {'Reply-To': email }
             )
             email.send()
             return redirect('contact')
+    else:
+        form = ContactForm()
 
-    return render(request, 'core/contact.html', {'form': form_class})
+    return render(request, 'core/contact.html', {'form': form})

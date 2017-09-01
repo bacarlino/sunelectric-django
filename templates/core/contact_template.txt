@@ -1,8 +1,14 @@
 Contact Name:
-{{ contact_name }}
+{{ name }}
 
 Email:
-{{ contact_email }}
+{{ email }}
+
+Phone:
+{{ phone }}
+
+Company:
+{{ company }}
 
 Content:
-{{ form_content|safe|striptags }}
+{{ message|safe|striptags }}
