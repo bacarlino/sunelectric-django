@@ -2,7 +2,7 @@
   /*outline: solid red;*/
 }
 
-html, body, #root, #main-container {
+html, body {
   /*border: solid green;*/
   height: 100%;
   background-color: #f5f5f5;
