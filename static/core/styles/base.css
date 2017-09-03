@@ -125,3 +125,13 @@ html, body {
   }
 
 }
+
+.form-control:focus {
+  border-color: #f97d1b;
+}
+
+.btn-primary {
+  color: #333;
+  background-color: #f97d1b;
+  border-color: #f97d1b;
+}
