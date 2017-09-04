@@ -1,6 +1,6 @@
 from django import forms
 from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Submit
+from crispy_forms.layout import Div, Layout, Submit
 from phonenumber_field import formfields as phone_forms
 from phonenumber_field.widgets import PhoneNumberInternationalFallbackWidget
 
@@ -23,7 +23,21 @@ class ContactForm(forms.Form):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper()
-        self.helper.add_input(Submit('submit', 'Submit'))
+        self.helper.layout = Layout (
+            Div(
+                'name',
+                'email',
+                'phone',
+                'company',
+                css_class="col-md-offset-2 col-md-4"
+            ),
+            Div(
+                'message',
+                Submit('submit', 'Submit'),
+                css_class="col-md-4"
+            )
+        )
+        # self.helper.add_input(Submit('submit', 'Submit'))
 
         self.fields['phone'].widget.attrs.update({
             'pattern': '^([0-9]( |-)?)?(\(?[0-9]{3}\)?|[0-9]{3})( |-)?([0-9]{3}( |-)?[0-9]{4}|[a-zA-Z0-9]{7})$'

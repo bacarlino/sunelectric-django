@@ -2,10 +2,34 @@
   /*outline: solid red;*/
 }
 
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Libre+Franklin');
+
 html, body {
   /*border: solid green;*/
-  height: 100%;
+  /*position: relative;*/
+  /*height: 100%;*/
+  /*min-height: 100%;*/
   background-color: #f5f5f5;
+}
+
+html {
+  /*border: solid green;*/
+  position: relative;
+  /*height: 100%;*/
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  /*position: relative;*/
+  /*border: solid red;*/
+  margin-bottom: 100px;
+  /*font-family: 'Libre Baskerville', serif;*/
+  font-size: 1.5em;
+}
+
+h1, h2, h3, h4, .navbar {
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 .navbar {
@@ -79,17 +103,36 @@ html, body {
   background-color: #222;
 }
 
-#footer {
-  height: 75px;
-  margin-top: 25px;
-  padding: 15px;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px;
   background-color: #f97d1b;
 }
 
-#footer h1 {
-  /*margin: 0;
-  padding: 0;*/
+.footer a {
+  color: #333;
 }
+
+.form-control {
+  border-color: #777;
+}
+
+.form-control:focus {
+  border-color: #f97d1b;
+}
+
+.btn-primary {
+  color: #333;
+  background-color: #f97d1b;
+  border-color: #f97d1b;
+}
+
+
+
+/*** MEDIA QUERIES ***/
 
 @media (max-width: 991px) {
   .nav {
@@ -124,14 +167,7 @@ html, body {
     padding-right: 0;
   }
 
-}
-
-.form-control:focus {
-  border-color: #f97d1b;
-}
-
-.btn-primary {
-  color: #333;
-  background-color: #f97d1b;
-  border-color: #f97d1b;
+  .footer a, h4 {
+    font-size: 12px;
+  }
 }
