@@ -32,6 +32,12 @@ h1, h2, h3, h4, .navbar {
   font-family: 'Libre Franklin', sans-serif;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+
 .navbar {
   /*outline: solid pink;*/
   background-color: #f5f5f5;
