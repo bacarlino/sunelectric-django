@@ -67,7 +67,7 @@ h1, h2, h3, h4, .navbar {
 }
 
 .navbar-brand img {
-
+  max-height: 100%;
   /*outline: solid orange;*/
   /*width: 350px;
   margin: 0;
@@ -140,7 +140,7 @@ h1, h2, h3, h4, .navbar {
   }
 
   .navbar img {
-    height: 95px;
+    /*height: 95px;*/
   }
 }
 
@@ -160,7 +160,7 @@ h1, h2, h3, h4, .navbar {
   }
 
   .navbar img {
-    height: 75px;
+    max-height: 90%;
   }
 
   .navbar-collapse {
