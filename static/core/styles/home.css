@@ -48,7 +48,7 @@
 
 @media (max-width: 767px) {
   .home-banner {
-    height: 150px;
+    height: 175px;
     background: url("../images/indyskylinethin.jpg") center top / auto 100% no-repeat;
   }
 }
