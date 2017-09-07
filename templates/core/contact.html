@@ -24,5 +24,14 @@
   <div class="row">
       {% crispy form  %}
   </div>
+
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li class="alert alert-{{ message.tags }}">{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
 </div>
 {% endblock content %}
