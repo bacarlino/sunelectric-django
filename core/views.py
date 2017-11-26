@@ -35,7 +35,7 @@ def contact(request):
                 headers = {'Reply-To': email }
             )
             email.send()
-            messages.success(request, 'Thank you for your inquiry! We will be in touch.')
+            messages.success(request, 'Thank you! We will be in touch.')
             return redirect('contact')
 
     else:

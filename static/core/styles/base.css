@@ -3,6 +3,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Libre+Franklin');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:900i|Kanit:900|Roboto');
 
 html, body {
   /*border: solid green;*/
@@ -29,7 +30,7 @@ body {
 }
 
 h1, h2, h3, h4, .navbar {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Exo 2', sans-serif;
 }
 
 ul {
