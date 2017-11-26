@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'webpack_loader',
     'whitenoise.runserver_nostatic',
     'core',
+    'timesheet',
     'phonenumber_field',
     'crispy_forms'
 ]
