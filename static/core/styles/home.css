@@ -5,7 +5,12 @@
    font-weight: bold;
    margin: 0;
    padding: 20px;
-   background-color: #f97d1b;
+   background-color: #f35c19;
+ }
+
+ .home-intro {
+   padding-top: 25px;
+   padding-bottom: 25px;
  }
 
  .home-text {
@@ -27,9 +32,9 @@
   font-weight: bold;
   margin-top: 0;
   padding: 15px;
-  background-color: #f97d1b;
-
+  background-color: #f35c19;
 }
+
 
 #home img {
   padding: 10%
