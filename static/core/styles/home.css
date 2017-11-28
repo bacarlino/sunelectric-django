@@ -14,7 +14,7 @@
  }
 
  .home-text {
-   margin: 20% 5%;
+   /*margin: 10% 5%;*/
  }
 
 .home-banner {
@@ -35,10 +35,19 @@
   background-color: #f35c19;
 }
 
+#home {
+  /*background-color: #F5F5F5;*/
+  /*color: #fff;
+  border-left: solid 5px #f35c19;
+  border-right: solid 5px #f35c19;*/
+
+}
+
 
 #home img {
-  padding: 10%
+  padding: 5%
 }
+
 
 @media (max-width: 991px) {
   .home-text {

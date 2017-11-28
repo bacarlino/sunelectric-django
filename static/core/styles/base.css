@@ -1,5 +1,5 @@
 * {
-  /*outline: solid red;*/
+  outline: solid red;
 }
 
 html, body {
@@ -24,11 +24,11 @@ body {
   margin-bottom: 100px;
   font-family: 'Roboto', sans-serif;
   font-size: 1.75em;
+  /*background-color: #f35c19;*/
 }
 
 body p {
   /*font-size: 1.25em;*/
-
 }
 
 h1, h2, h3, h4, .navbar {
@@ -41,6 +41,11 @@ ul {
   list-style-type: none;
 }
 
+hr {
+  height: 1px;
+  width: 20em;
+  background-color: #f35c19;
+}
 
 .navbar {
   /*outline: solid pink;*/
@@ -132,7 +137,7 @@ ul.nav.navbar-nav.navbar-right {
   height: auto;
   padding: 10px;
   background-color: #f35c19;
-}
+ }
 
 .footer a {
   color: #333;
