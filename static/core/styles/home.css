@@ -13,8 +13,16 @@
    padding-bottom: 25px;
  }
 
+ .home-image {
+   /*height: 100%;*/
+ }
+
  .home-text {
-   /*margin: 10% 5%;*/
+   /*height: 100%;*/
+   margin: 10% 0;
+   background-color: #BBB;
+   border-radius: 6px;
+   padding: 10px;
  }
 
 .home-banner {
@@ -43,16 +51,34 @@
 
 }
 
+#home .row {
+  margin-top: 50px;
+  margin-bottom: 250px;
+}
+
 
 #home img {
-  padding: 5%
+  /*padding: 5%*/
+  /*max-height: 95%;
+  max-width: 95%;*/
+}
+
+@media (max-widthh: 1200px) {
+  .home-text {
+    margin: 0;
+  }
+  .home-image {
+      margin: 10% 0;
+  }
 }
 
 
 @media (max-width: 991px) {
   .home-text {
-    margin: 2%;
+    margin: 0;
+    padding: 0;
   }
+
 
   #home img {
     padding: 2%;
